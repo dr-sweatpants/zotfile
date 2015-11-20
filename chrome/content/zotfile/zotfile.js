@@ -1495,7 +1495,7 @@ Zotero.ZotFile = {
                 var collection = Zotero.Collections.get(collectionID);
                 if (collection.parent == null)  return collection.name
 
-                return getCollectionPath(collection.parent) + "/" + collection.name;
+                return getCollectionPath(collection.parent) + "\\" + collection.name;
             };
 
             return item.getCollections().map(getCollectionPath);
